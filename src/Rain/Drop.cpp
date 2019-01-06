@@ -9,6 +9,7 @@
 
 namespace rain
 {
+
     Drop::Drop(unsigned x, int y, unsigned depth)
     : mDepth(depth)
     , mYSpeed(utils::map(depth, 0, 20, 1, 20))

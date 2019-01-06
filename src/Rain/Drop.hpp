@@ -33,6 +33,7 @@ namespace rain
 
         void fall(int gravity, sf::Time dt);
 
+        // Getters
         sf::Vector2f getPosition() const;
 
     private:

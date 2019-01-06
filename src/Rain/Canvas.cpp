@@ -12,7 +12,7 @@ namespace rain
 
     Canvas::Canvas()
     : mDropAmount(500)
-    , mGravity(9)
+    , mGravity(12)
     {
 
         for(int d(0) ; d < mDropAmount ; d++)
@@ -27,7 +27,7 @@ namespace rain
 
     void Canvas::addRainDrop()
     {
-        Drop::Ptr dr(new Drop(Rd.rand(1,800), -Rd.rand(100,200), Rd.rand(1,20)));
+        Drop::Ptr dr(new Drop(Rd.rand(1,800), -Rd.rand(100,300), Rd.rand(1,20)));
         mDropArray.push_back(std::move(dr));
     }
 

@@ -12,6 +12,7 @@
 #include <vector>
 
 #include "Drop.hpp"
+#include "../Utils.hpp"
 
 namespace rain
 {

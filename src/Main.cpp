@@ -47,10 +47,8 @@ int main(int argc, char** argv)
             timeSinceLastUpdate -= TimePerFrame;
             can.update(TimePerFrame);
         }
-        // clear the window with black color
-        window.clear(backgroundColor);
 
-        // draw everything here...
+        window.clear(backgroundColor);
         window.draw(can);
 
         // end the current frame
