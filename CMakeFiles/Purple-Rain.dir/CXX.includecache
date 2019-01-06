@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Canvas.cpp
+Canvas.hpp
+/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Canvas.hpp
+
+/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Canvas.hpp
+random
+-
+vector
+-
+Drop.hpp
+/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Drop.hpp
+
+/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Drop.hpp
+random
+-
+utility
+-
+SFML/Graphics.hpp
+-
+../Utils.hpp
+/Users/raphael/Documents/CPP/Purple-Rain/src/Utils.hpp
+
+/Users/raphael/Documents/CPP/Purple-Rain/src/Utils.hpp
+random
+-
+
