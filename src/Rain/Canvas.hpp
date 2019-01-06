@@ -24,7 +24,7 @@ namespace rain
         virtual ~Canvas();
 
         void addRainDrop();
-        void update();
+        void update(sf::Time dt);
 
     private:
 

@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Canvas.cpp
-Canvas.hpp
-/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Canvas.hpp
-
-/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Canvas.hpp
-random
--
-vector
--
+/Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Drop.cpp
 Drop.hpp
 /Users/raphael/Documents/CPP/Purple-Rain/src/Rain/Drop.hpp
 

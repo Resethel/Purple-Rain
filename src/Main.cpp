@@ -16,17 +16,20 @@
 
 int main(int argc, char** argv)
 {
+
+    const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
+
     // create the window
     sf::RenderWindow window(sf::VideoMode(800, 600), "Purple Rain");
-    window.setFramerateLimit(10);
 
     rain::Canvas can;
+
+    sf::Clock clock; // Used for delta timing
+    sf::Time timeSinceLastUpdate = sf::Time::Zero;
 
     // run the program as long as the window is open
     while (window.isOpen())
     {
-
-        can.update();
 
         // check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;
@@ -37,6 +40,13 @@ int main(int argc, char** argv)
                 window.close();
         }
 
+        // Update cycle
+        timeSinceLastUpdate += clock.restart();
+        while (timeSinceLastUpdate > TimePerFrame)
+        {
+            timeSinceLastUpdate -= TimePerFrame;
+            can.update(TimePerFrame);
+        }
         // clear the window with black color
         window.clear(backgroundColor);
 

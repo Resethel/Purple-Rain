@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Makes linguist ignore files in cmake for better language classification
+cmake/* linguist-vendored

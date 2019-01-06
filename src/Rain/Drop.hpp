@@ -31,7 +31,7 @@ namespace rain
         Drop(unsigned x, int y, unsigned depth);
         virtual ~Drop();
 
-        void fall(int gravity);
+        void fall(int gravity, sf::Time dt);
 
         sf::Vector2f getPosition() const;
 
