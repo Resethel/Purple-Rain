@@ -38,15 +38,6 @@ cmake_install.cmake
 Purple-Rain
 
 
-### IMAGES RELATED ###
-
-
-*.png
-*.jpeg
-*.jpg
-*.gif
-
-
 ### CPP RELATED ###
 
 
