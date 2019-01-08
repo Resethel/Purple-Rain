@@ -7,6 +7,7 @@
 #ifndef UTILS_HPP
 #define UTILS_HPP
 
+#include <algorithm>
 #include <random>
 
 namespace utils
@@ -16,6 +17,13 @@ namespace utils
     {
 	   return ostart + (ostop - ostart) * ((value - istart) / (istop - istart));
    }
+
+   template <typename T>
+   inline T clamp(const T& n, const T& lower, const T& upper)
+   {
+       return std::max(lower, std::min(n, upper));
+   }
+
 
 
     class Randomizer

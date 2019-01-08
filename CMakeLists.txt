@@ -3,7 +3,7 @@ project (Purple-Rain)
 
 # The version number.
 set (Purple-Rain_VERSION_MAJOR 1)
-set (Purple-Rain_VERSION_MINOR 1)
+set (Purple-Rain_VERSION_MINOR 2)
 
 #
 set(CMAKE_CXX_STANDARD 14)
@@ -28,6 +28,7 @@ add_executable(
     src/Rain/Canvas.cpp
     src/Rain/Drop.hpp
     src/Rain/Drop.cpp
+    src/Constants.hpp
 
 )
 

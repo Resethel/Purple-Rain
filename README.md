@@ -32,11 +32,12 @@ make
 ## RoadMap
 	[x] Create a canvas with random number of particles spaced at random intervals that animate down through the height of the canvas
 	[x] For every fame of the animation, update the number of rain drops to create a continuous, infinite rainfall
-	[ ] Add a UI to allow users to control the
-		[ ] start
-		[ ] stop
-		[ ] reset
-		[ ] speed
-		[ ] density
+	[x] Allow users to control those aspects:
+		[x] start
+		[x] stop
+		[x] reset
+		[x] speed
+		[x] density
+	[ ] Add an UI to control those aspects.
     [ ] Add some wind to blow the rain diagonally
     [ ] As the rain reaches the bottom of the canvas, have them form a puddle which fills the screen evenly

@@ -21,11 +21,32 @@ namespace rain
     {
     public:
 
+        // Declarations & Destructor
+
         Canvas();
         virtual ~Canvas();
 
+        // Methods
+
         void addRainDrop();
+        void clear();
+
         void update(sf::Time dt);
+
+        // Setters
+
+        void start();
+        void stop();
+
+        void setDensity(float density);
+        void setGravity(float gravity);
+
+        // Getters
+
+        bool isRunning() const;
+
+        float getDensity() const;
+        float getGravity() const;
 
     private:
 
@@ -33,15 +54,15 @@ namespace rain
 
     private:
 
-        unsigned    mDropAmount;
-        unsigned    mGravity;
+        float    mDensity;
+        float    mGravity;
+
+        bool    mRunning;
 
         std::vector<Drop::Ptr> mDropArray;
-
         utils::Randomizer Rd;
 
     };
-
 
 }
 

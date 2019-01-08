@@ -9,18 +9,18 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
 
-
 #include "Rain/Canvas.hpp"
-
+#include "Constants.hpp"
 
 
 int main(int argc, char** argv)
 {
 
+
     const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
 
     // create the window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Purple Rain");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Purple Rain", sf::Style::Close);
 
     rain::Canvas can;
 
@@ -38,6 +38,56 @@ int main(int argc, char** argv)
             // "close requested" event: we close the window
             if (event.type == sf::Event::Closed)
                 window.close();
+
+            // Escape pressed: exit
+            if (event.type == sf::Event::KeyPressed &&
+                event.key.code == sf::Keyboard::Escape)
+            {
+                window.close();
+            }
+
+            // Modifying Canvas parameters
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::Up)
+            {
+                can.setDensity(can.getDensity() + 0.25f);
+            }
+
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::Down)
+            {
+                can.setDensity(can.getDensity() - 0.25f);
+            }
+
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::Right)
+            {
+                can.setGravity(can.getGravity() + 0.25f);
+            }
+
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::Left)
+            {
+                can.setGravity(can.getGravity() - 0.25f);
+            }
+
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::Space)
+            {
+                can.start();
+            }
+
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::S)
+            {
+                can.stop();
+            }
+
+            if (event.type == sf::Event::KeyReleased &&
+                event.key.code == sf::Keyboard::C)
+            {
+                can.clear();
+            }
         }
 
         // Update cycle

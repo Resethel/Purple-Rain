@@ -12,6 +12,8 @@
 #include <utility>
 
 #include <SFML/Graphics.hpp>
+
+#include "../Constants.hpp"
 #include "../Utils.hpp"
 
 const sf::Color backgroundColor(230,230,250);
@@ -28,12 +30,17 @@ namespace rain
 
     public:
 
+        // Declarations & Destructor
+
         Drop(unsigned x, int y, unsigned depth);
         virtual ~Drop();
 
-        void fall(int gravity, sf::Time dt);
+        // Methods
+
+        void fall(float fact, sf::Time dt);
 
         // Getters
+
         sf::Vector2f getPosition() const;
 
     private:
