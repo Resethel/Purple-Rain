@@ -2,8 +2,7 @@
 // Utils.cpp
 // Purple-Rain
 //
-// Ollando Raphaël
-//
+
 #include "Utils.hpp"
 
 

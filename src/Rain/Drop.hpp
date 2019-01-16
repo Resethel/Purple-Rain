@@ -2,18 +2,16 @@
 // Drop.hpp
 // Purple-Rain
 //
-// Ollando Raphaël
-//
 
-#ifndef DROP_HPP
-#define DROP_HPP
+#ifndef RAIN_DROP_HPP
+#define RAIN_DROP_HPP
 
 #include <random>
 #include <utility>
 
 #include <SFML/Graphics.hpp>
 
-#include "../Constants.hpp"
+#include "../Constant.hpp"
 #include "../Utils.hpp"
 
 const sf::Color backgroundColor(230,230,250);
@@ -58,4 +56,4 @@ namespace rain
 
 }
 
-#endif // DROP_HPP
+#endif // RAIN_DROP_HPP

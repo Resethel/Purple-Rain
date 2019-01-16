@@ -2,8 +2,6 @@
 // Canvas.cpp
 // Purple-Rain
 //
-// Ollando Raphaël
-//
 
 #include "Canvas.hpp"
 
@@ -53,7 +51,7 @@ namespace rain
             // "division by 0" induced crash... No matter what mathematicians would say)
             float d = this->mDensity / ( 5.f - this->mGravity);
             char it(0);
-            while(d > 1.f and it < CONSTANTS::MAX_DROP_PER_ITERATION - 1)
+            while(d > 1.f and it < CONSTANT::MAX_DROP_PER_ITERATION - 1)
             {
                 addRainDrop();
                 --d;

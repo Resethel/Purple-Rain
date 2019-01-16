@@ -2,8 +2,6 @@
 // Drop.hpp
 // Purple-Rain
 //
-// Ollando Raphaël
-//
 
 #include "Drop.hpp"
 
@@ -37,7 +35,7 @@ namespace rain
     {
         mBody.move(0,mYSpeed * dt.asSeconds());
         mYSpeed += utils::map(this->mDepth, 0, 20, 0.4, 1) *
-                            fact * CONSTANTS::CANVAS_GRAVITY;
+                            fact * CONSTANT::CANVAS_GRAVITY;
     }
 
 ////////// Getters

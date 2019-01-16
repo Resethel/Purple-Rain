@@ -38,6 +38,7 @@ make
 		[x] reset
 		[x] speed
 		[x] density
-	[ ] Add an UI to control those aspects.
+	[x] Add an UI to control those aspects.
+	[ ] Add a check boxes to the GUI (FPS display, etc.)
     [ ] Add some wind to blow the rain diagonally
     [ ] As the rain reaches the bottom of the canvas, have them form a puddle which fills the screen evenly

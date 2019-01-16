@@ -2,16 +2,17 @@
 // Canvas.hpp
 // Purple-Rain
 //
-// Ollando Raphaël
-//
 
-#ifndef CANVAS_HPP
-#define CANVAS_HPP
+#ifndef RAIN_CANVAS_HPP
+#define RAIN_CANVAS_HPP
 
 #include <random>
 #include <vector>
 
+#include <SFML/Graphics.hpp>
+
 #include "Drop.hpp"
+#include "../Constant.hpp"
 #include "../Utils.hpp"
 
 namespace rain
@@ -67,4 +68,4 @@ namespace rain
 }
 
 
-#endif // CANVAS_HPP
+#endif // RAIN_CANVAS_HPP
